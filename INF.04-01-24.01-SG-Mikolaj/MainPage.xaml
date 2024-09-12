@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="INF._04_01_24._01_SG_Mikolaj.MainPage">
+
+    
+        <Grid Background="CadetBlue" Padding="30">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <VerticalStackLayout>
+                <Grid ColumnSpacing="50" RowSpacing="50" Padding="20">
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="2*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Label TextColor="Black" Text="Numer" VerticalOptions="Center" HorizontalOptions="Start"/>
+                        <Entry TextColor="Black" BackgroundColor="Azure" Grid.Column="1"  VerticalOptions="Center" HorizontalOptions="Fill"/>
+
+                        <Label TextColor="Black" Text="Imię" Grid.Row="1" VerticalOptions="Center" HorizontalOptions="Start"/>
+                        <Entry TextColor="Black" BackgroundColor="Azure" Grid.Row="1" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Fill"/>
+
+                        <Label TextColor="Black" Text="Nazwisko" Grid.Row="2" VerticalOptions="Center" HorizontalOptions="Start"/>
+                        <Entry TextColor="Black" BackgroundColor="Azure" Grid.Row="2" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Fill"/>
+                </Grid>
+                <Border
+                            Stroke="White"
+                            StrokeThickness="4"
+                            StrokeShape="RoundRectangle 5,5,5,5">
+                    <VerticalStackLayout Padding="20">
+                        <Label Text="Kolor oczu" TextColor="Black" VerticalOptions="Center" HorizontalOptions="Start"/>
+                        <HorizontalStackLayout>
+                            <CheckBox/>
+                            <Label Text="niebieskie" TextColor="Black" VerticalOptions="Center" HorizontalOptions="Start"/>
+                        </HorizontalStackLayout>
+                        <HorizontalStackLayout>
+                            <CheckBox/>
+                            <Label Text="zielone" TextColor="Black" VerticalOptions="Center" HorizontalOptions="Start"/>
+                        </HorizontalStackLayout>
+                        <HorizontalStackLayout>
+                            <CheckBox/>
+                            <Label Text="piwne" TextColor="Black" VerticalOptions="Center" HorizontalOptions="Start"/>
+                        </HorizontalStackLayout>
+                    </VerticalStackLayout>
+                </Border>
+            </VerticalStackLayout>
+            <VerticalStackLayout Grid.Column="1" Spacing="45">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                    <Image Source="zdjecie3.jpg" HeightRequest="400"/>
+                    <Image Source="odcisk3.jpg" Grid.Column="1" HeightRequest="400"/>
+                </Grid>
+                <Button BackgroundColor="Azure" Text="OK" WidthRequest="500"/>
+            </VerticalStackLayout>
+            </Grid>
+    
+
+</ContentPage>
